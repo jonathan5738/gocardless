@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
+import { FiChevronDown, FiMenu, FiX, FiArrowRight } from "react-icons/fi";
 import { motion } from 'framer-motion';
 import '../../css/Navbar/Navbar.css'
 function Navbar() {
@@ -46,6 +46,19 @@ function Navbar() {
         <div className="navbar-container-mobile-content">
             <FiX size={25} onClick={() => setShowMenu(prev => !prev)}
              color={'#fff'} className='close-mobile-menu-icon'/>
+             <div className="navbar-container-mobile-content-links">
+                 <a href="#" className='logo-link-mobile'>GoCardless</a>
+                 <ul className="menu-mobile">
+                    <li className='menu-item-mobile'><Link to="#" className='menu-item-mobile-link'>Product <FiArrowRight className='navbar-icon'/></Link></li>
+                    <li className='menu-item-mobile'><Link to="#" className='menu-item-mobile-link'>Partners <FiArrowRight className='navbar-icon'/></Link></li>
+                    <li className='menu-item-mobile'><Link to="#" className='menu-item-mobile-link'>Pricing <FiArrowRight className='navbar-icon'/></Link></li>
+                    <li className='menu-item-mobile'><Link to="#" className='menu-item-mobile-link'>Learn <FiArrowRight className='navbar-icon'/> </Link></li>
+                    <div className='auth-links-mobile'>
+                        <li><Link to="#" className='login-mobile'>Login</Link></li>
+                        <li><Link to="#" className='signup-mobile'>Sign up</Link></li>
+                    </div>
+                 </ul>
+             </div>
         </div>
      </motion.div>
      </>
