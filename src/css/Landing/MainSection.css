@@ -1,0 +1,16 @@
+/* .main-section{
+    position: relative;
+    top: 130vh;
+}
+@media(max-width: 356px){
+    .main-section{
+        position: relative;
+        top: 140vh;
+    }
+} */
+/* .main-section {
+    margin-top: 50rem;
+} */
+.main-section {
+    margin-top: 10rem;
+}

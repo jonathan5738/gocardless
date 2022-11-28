@@ -22,7 +22,7 @@ function Navbar() {
                 <motion.a href="/"  variants={logoVariants}
                   initial='initial'
                   animate={showMenu ? 'hide': ''}
-                 className='logo-link'>GoCardless</motion.a>
+                  className='logo-link'>GoCardless</motion.a>
                 <ul className="menu">
                     <li className='menu-item'><Link to="#">Why gocardless</Link></li>
                     <li className='menu-item'><Link to="#" className='menu-item-link'>Product <FiChevronDown className='navbar-icon'/></Link></li>
