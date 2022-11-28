@@ -4,14 +4,15 @@
     background-image:linear-gradient(#00000059, rgb(15, 15, 15)),url('https://images.pexels.com/photos/14327570/pexels-photo-14327570.jpeg');
     background-size: cover;
     background-position: center;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
-
+.margin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .hero-section-text {
     width: 40%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-top: 10rem;
     padding-bottom: 25rem;
     color: #fff;
