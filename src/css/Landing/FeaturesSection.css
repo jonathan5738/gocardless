@@ -34,7 +34,10 @@
     cursor: pointer;
     text-decoration: underline;
 }
-
+.feature-section a {
+    text-decoration: none;
+    color: #333;
+}
 @media(max-width:894px){
     .feature-section {
         padding: var(--mobile-padd);

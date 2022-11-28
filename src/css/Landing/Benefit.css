@@ -1,0 +1,38 @@
+.benefit-container {
+    padding: var(--desk-padd);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    margin-top: 15rem;
+}
+.benefit-card-text h3 {
+    font-size: 2rem;
+}
+.benefit-card-link {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 3px solid #333;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5rem;
+}
+
+@media(max-width: 893px){
+    .benefit-container {
+        padding: var(--mobile-padd);
+    }
+}
+@media(max-width: 800px){
+    .benefit-container {
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+    .benefit-card-link {
+        font-size: 1.3rem;
+    }
+    .benefit-card-link {
+        display: block;
+        text-align: center;
+    }
+}
