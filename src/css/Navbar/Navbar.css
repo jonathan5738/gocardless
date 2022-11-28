@@ -1,0 +1,117 @@
+.navbar-container {
+    padding: var(--desk-padd);
+    font-size: 1.6rem;
+    position: relative;
+    top: 0;
+    z-index: 800;
+}
+.navbar {
+    display: flex;
+    height: 8rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar a {
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    list-style: none;
+}
+
+.menu-item-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.login {
+    display: inline-block;
+    padding: .5em 2em;
+    border: 3px solid #fff;
+    border-radius: 10rem;
+    color: #fff;
+}
+.signup {
+    display: inline-block;
+    padding: .5em 2em;
+    border: 3px solid transparent;
+    color: #333;
+    border-radius: 10rem;
+    background-color: var(--btn-yellow-color);
+}
+.navbar-container-mobile {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    background-color: #00000041;
+}
+.navbar-container-mobile-content {
+    width: 30%;
+    height: 100vh;
+    background: lightblue;
+    z-index: inherit;
+}
+.menu-mobile-icon {
+    display: none;
+}
+.close-mobile-menu-icon {
+    position: absolute;
+    left: 33%;
+    top: 1.6rem;
+    transition: .3s;
+    padding: 1rem;
+    background-color: none;
+    border-radius: 50%;
+}
+.close-mobile-menu-icon:hover {
+    background-color: rgb(43, 42, 42);
+}
+.close-mobile-menu-icon:hover {
+    cursor: pointer;
+}
+@media(max-width: 1268px){
+    .navbar-container {
+        font-size: 1.4rem;
+        padding: var(--mobile-padd);
+    }
+    .menu-mobile-icon { display: block; }
+    .menu-mobile-icon:hover{ cursor: pointer; }
+    .menu { display: none;}
+    .navbar { 
+        width: 60%;
+     }
+    .logo-link {
+        font-size: 2.7rem;
+        color: #fff;
+    }
+}
+@media(max-width: 814px){
+    .navbar-container-mobile-content {
+        width: 70%;
+        height: 100vh;
+        background: lightblue;
+        z-index: inherit;
+    }
+    .close-mobile-menu-icon {
+        left: 75%;
+    }
+}
+@media(max-width: 682px){
+    /* .navbar { width: 65%; } */
+    .navbar { width: 100%;}
+}
+@media(max-width: 479px){
+    /* .navbar { width: 70%; } */
+}

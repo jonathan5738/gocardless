@@ -1,3 +1,6 @@
 :root {
     --font-family:'Montserrat', sans-serif;
+    --desk-padd: 0 10rem;
+    --mobile-padd: 0 2rem;
+    --btn-yellow-color: #f1f252;
 }
